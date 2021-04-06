@@ -4,8 +4,8 @@ void recursion(int depth, Graph &graph) {
     if (depth > 30000)
         return;
 
-    Graph graph_cpy = graph;
-    Graph graph_cpy2 = graph;
+    Graph graph_cpy = graph;  // dummy copy
+    Graph graph_cpy2 = graph; // second dummy copy
     printf("Depth = %d \n", depth + 1);
     recursion(depth + 1, graph);
 }
